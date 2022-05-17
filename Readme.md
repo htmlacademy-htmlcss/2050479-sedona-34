@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aliaksandra Sinitsyna](https://up.htmlacademy.ru/htmlcss/34/user/2050479).
-* Наставник: [Серёжа Попов].
+* Наставник: [Серёжа Попов] (https://htmlacademy.ru/profile/id42761).
 
 ---
 
