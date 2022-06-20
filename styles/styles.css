@@ -35,4 +35,23 @@
     text-decoration: none;
   }
 
+  .main-index {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }  
+
+  .hero-welcome {
+    text-align: center;
+  }
+
+  .advantages {
+     text-align: center;
+  } 
+
   
+
+
+
