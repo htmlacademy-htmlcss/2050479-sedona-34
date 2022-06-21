@@ -22,8 +22,16 @@
     background-color: #fff;
   }
 
-  .page-header {
+  h2, h3, h4 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
 
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
   }
 
   .navigation-link {
@@ -47,11 +55,47 @@
     text-align: center;
   }
 
+  p.hero-welcome {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
   .advantages {
      text-align: center;
+     color: #000;
+     background-color: #fff;
   } 
 
+  .advantages-list {
+  color: #333333;
+  background-color: #82B3D3;
+  }
+
+  .advantages-list-icon {
+  color: #000;
+  background-color: #fff;
+  }
+
+  .hotel_search {
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+  }
+
+  .subscription {
+    text-align: center;
+    color: #fff;
+    background-image: url("../images/background\ subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000;
+  }
+
   
-
-
-
