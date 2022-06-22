@@ -13,6 +13,19 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
+
+  /*.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }*/
   
   body {
     font-family: "PT Sans", sans-serif;
@@ -90,6 +103,48 @@
     background-size: 100% auto;
   }
 
+  .subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  }
+
+  .subscription-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .subscription-form {
+    width: 800px;
+    display: flex;
+    margin: 0 auto
+  }
+
+  .subscription-input {
+    background: #F2F2F2;
+    
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    width: 600px;
+    padding-left: 22px;
+    border: none;
+  }
+
+
+  .subscription-button {
+    background: #82B3D3;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 13px 44px 13px 35px;
+    border: none;
+  }
+
   .contacts-phone {
     font-size: 40px;
     line-height: 40px;
@@ -98,4 +153,24 @@
     color: #000;
   }
 
-  
+.main-inner {
+  background-image: url("../images/background\ subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+}  
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.subscription-catalog {
+  color: #000;
+  background: #fff;
+}
+
+.subscription-catalog p {
+  color: #333333;
+}
+
+
