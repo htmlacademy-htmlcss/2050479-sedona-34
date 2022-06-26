@@ -47,6 +47,28 @@
     text-transform: uppercase;
   }
 
+  .button-all {
+    padding: 8px 15px 9px 15px;
+    background: #756157;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 160px;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+  
+  .button-all:hover {
+    background: #615048;
+  }
+  
+
+
+  /* Навигация */
+
   .navigation-link {
     font-family: "PT Sans Narrow", sans-serif;
     font-size:20px;
@@ -55,6 +77,20 @@
     color: #000000;
     text-decoration: none;
   }
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list navigation-user {
+  display: flex;
+  justify-content: space-between;
+}
+
 
   .main-index {
     color: #000000;
