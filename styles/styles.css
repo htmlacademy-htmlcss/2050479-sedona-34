@@ -110,51 +110,108 @@
   }
 
   
-/* Преимущества */
+
+  /* Преимущества */
 
   .advantages {
-     text-align: center;
-     color: #000;
-     background-color: #fff;
-  } 
-
-
-  .advantages-item {
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-
-  .advantages-list {
-  color: #333333;
-  background-color: #82B3D3;
-  }
-
-  .advantages-list-icon {
-    color: #000;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .advantages_number {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .advantages-item_wrapper {
-    color: #fff;
-  }
-  
-
-  .hotel_search {
     text-align: center;
     color: #000;
     background-color: #fff;
+ } 
+
+
+ .advantages-item {
+   display: flex;
+   justify-content: space-between;
+ }
+
+
+
+ .advantages-list {
+ color: #333333;
+ /*background-color: #82B3D3;*/
+ }
+
+ .advantages-list-icon {
+   color: #000;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .advantages_number {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .advantages-item__wrapper {
+    color: #fff;
+ width: 400px;
+ hight: 384px;
+ background: #82B3D3;
+ text-align: center;
+ vertical-align: middle;
+
+ }
+ 
+.advantages-description-wrapper {
+ display: inline-block;
+ width: 230px;
+ margin: 92px 85px;      
+}
+
+.advantages-list-icon li {
+ width: 400px;
+ hight: 384px;
+ margin: 92px 85px;
+}	
+
+.advantages-item_number {
+ width: 230px;
+ margin: 103px 85px 102px;
+      
+ 
+}
+
+.advantages_number  li {
+  width: 400px;
+  hight: 384px;    
+}
+
+.advantages_number {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages_number number_four {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+
+
+.hotel_search {
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	padding-top: 91px;
+	padding-bottom: 93px;
+	
   }
 
- 
+.hotel_search-text {
+	width: 592px;	
+	margin: 29px auto 56px;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.button-hotel_search {
+	width: 544px;
+	padding: 12px 15px;
+	margin: 0 auto;
+
+}
+
   .contacts-phone {
     font-size: 40px;
     line-height: 40px;
@@ -248,6 +305,7 @@ text-align: center;
 	display: flex;
   justify-content: space-around;
 	width: 1060px;
+  margin: 0 auto;
 }
 
 .footer-social-list {
