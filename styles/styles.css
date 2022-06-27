@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  /*.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }*/
+  
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size:18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #fff;
+  }
+
+  h2, h3, h4 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .button-all {
+    padding: 8px 15px 9px 15px;
+    background: #756157;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 160px;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+  
+  .button-all:hover {
+    background: #615048;
+  }
+  
+
+
+  /* Навигация */
+
+  .navigation-link {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size:20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list navigation-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+  .main-index {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }  
+
+  .hero-welcome {
+    text-align: center;
+  }
+
+  p.hero-welcome {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  
+/* Преимущества */
+
+  .advantages {
+     text-align: center;
+     color: #000;
+     background-color: #fff;
+  } 
+
+
+  .advantages-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .advantages-list {
+  color: #333333;
+  background-color: #82B3D3;
+  }
+
+  .advantages-list-icon {
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages_number {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages-item_wrapper {
+    color: #fff;
+  }
+  
+
+  .hotel_search {
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+  }
+
+ 
+  .contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+.main-inner {
+  background-image: url("../images/background\ subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+}  
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+
+
+
+/* Подписка */
+
+.subscription {
+  text-align: center;
+  color: #fff;
+  background-image: url("../images/background\ subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 94px 0; 
+}
+
+.subscription-title {
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.subscription-form {
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.subscription-input {
+  background: #F2F2F2;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  width: 600px;
+  padding-left: 22px;
+  border: none;
+}
+
+.subscription-button {
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 13px 44px 13px 35px;
+  border: none;
+}
+
+.subscription-catalog {
+color: #000;
+background: #fff;
+}
+
+.subscription-catalog p {
+color: #333333;
+}
+
+.subscription-text {
+width: 475px;
+margin: 29px auto 46px;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+}
+
+
+
+/* Подвал */
+
+.footer-social_wrapper {
+	display: flex;
+  justify-content: space-around;
+	width: 1060px;
+}
+
+.footer-social-list {
+	display: flex;
+  justify-content: space-around;
+	width: 172px;
+}
+
+.contacts-phone a {
+	width: 331px;
+}
+
+.logo-htmlacademy img {
+	display: block;
+	width: 115px;
+	hight: 33px;
+}
