@@ -109,11 +109,22 @@
     line-height: 26px;
   }
 
+  
+/* Преимущества */
+
   .advantages {
      text-align: center;
      color: #000;
      background-color: #fff;
   } 
+
+
+  .advantages-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 
   .advantages-list {
   color: #333333;
@@ -121,9 +132,21 @@
   }
 
   .advantages-list-icon {
-  color: #000;
-  background-color: #fff;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
   }
+
+  .advantages_number {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages-item_wrapper {
+    color: #fff;
+  }
+  
 
   .hotel_search {
     text-align: center;
@@ -131,56 +154,7 @@
     background-color: #fff;
   }
 
-  .subscription {
-    text-align: center;
-    color: #fff;
-    background-image: url("../images/background\ subscribe.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-
-  .subscription-title {
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  }
-
-  .subscription-text {
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  .subscription-form {
-    width: 800px;
-    display: flex;
-    margin: 0 auto
-  }
-
-  .subscription-input {
-    background: #F2F2F2;
-    
-    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-    border-radius: 10px 0px 0px 10px;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    width: 600px;
-    padding-left: 22px;
-    border: none;
-  }
-
-
-  .subscription-button {
-    background: #82B3D3;
-    border-radius: 0px 10px 10px 0px;
-    font-size: 20px;
-    line-height: 36px;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 13px 44px 13px 35px;
-    border: none;
-  }
-
+ 
   .contacts-phone {
     font-size: 40px;
     line-height: 40px;
@@ -200,13 +174,94 @@
   line-height: 78px;
 }
 
+
+
+
+/* Подписка */
+
+.subscription {
+  text-align: center;
+  color: #fff;
+  background-image: url("../images/background\ subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 94px 0; 
+}
+
+.subscription-title {
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.subscription-form {
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.subscription-input {
+  background: #F2F2F2;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  width: 600px;
+  padding-left: 22px;
+  border: none;
+}
+
+.subscription-button {
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 13px 44px 13px 35px;
+  border: none;
+}
+
 .subscription-catalog {
-  color: #000;
-  background: #fff;
+color: #000;
+background: #fff;
 }
 
 .subscription-catalog p {
-  color: #333333;
+color: #333333;
+}
+
+.subscription-text {
+width: 475px;
+margin: 29px auto 46px;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
 }
 
 
+
+/* Подвал */
+
+.footer-social_wrapper {
+	display: flex;
+  justify-content: space-around;
+	width: 1060px;
+}
+
+.footer-social-list {
+	display: flex;
+  justify-content: space-around;
+	width: 172px;
+}
+
+.contacts-phone a {
+	width: 331px;
+}
+
+.logo-htmlacademy img {
+	display: block;
+	width: 115px;
+	hight: 33px;
+}
