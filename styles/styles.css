@@ -87,7 +87,8 @@ a {
 }
 
 .conteiner {
- /*width: 1200px; */
+ width: 1200px; 
+ 
 }
 
 /* Навигация */
@@ -99,6 +100,7 @@ a {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  padding:20px 17px;	
 }
 
 .navigation {
@@ -130,6 +132,13 @@ padding: 0;
 width: 390px;	*/		
 }
 
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+
+
 .navigation-user {
 display: flex;
 justify-content: space-between;
@@ -140,6 +149,7 @@ margin-left: auto;
 
 .main-container {
   flex-grow: 1;
+  padding-top: 52px; 	
 }
 
 .page-container {
@@ -169,14 +179,10 @@ margin: 0 auto;
 }
 
 
-
-
-
-
-
 .catalog-products {
 display: flex;
 justify-content: space-between;
+width: 1200px;
 }
 
 .catalog-filter {
@@ -210,7 +216,12 @@ text-transform: uppercase;
 }
 
 .product-card {
-  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+
+display: grid;
   grid-template-columns: 140px 140px;
   column-gap: 20px;
   grid-template-rows: 211px 28px 21px 37px 37px;
@@ -228,6 +239,7 @@ text-transform: uppercase;
 .hero-welcome {
   display: block;
   margin: 0 auto;
+  margin-bottom: 84px;
 }
 
 p.hero-welcome {
@@ -245,7 +257,7 @@ p.hero-welcome {
 
 .advantages-item {
   display: flex;
-  justify-content: space-between;
+  list-style-type: none;
 }
 
 .advantages-list {
@@ -259,11 +271,18 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.wrapper-text {
+  weight: 1200px;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
 .advantages-list-icon {
   color: #000;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 /*.advantages_number {
@@ -326,8 +345,17 @@ hight: 384px;
 }
 
 .advantages-title {
-  margin-bottom: 30px;
+  max-weight: 620px;
+  weight: 100%
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 31px;
 }
+ 
+.advantages-text
+
 
 .advantages-description-wrapper h3 {
   margin-bottom: 30px;
@@ -434,6 +462,46 @@ font-size: 22px;
 line-height: 26px;
 text-align: center;
 }
+
+
+
+
+
+
+.pagination-container {
+  display: flex;
+  padding: 16px; 
+  background-color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 23px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color:#82B3D3;
+  text-decoration: none;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  text-align: center;
+}
+
 
 
 /* Подвал */

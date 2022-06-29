@@ -10,39 +10,48 @@
 <body>
   
     <header class="page-header">
-        <nav class="navigation">
+      
+<!-- new -->
+
+	<nav class="navigation">
          <div class="navigation-logo">
             <img class="logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип Седона.">
-   </div>	
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#" >Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                  Отзывы
-                </span>
-              </a>
-            </li>
+	       </div>
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#" >Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img class="search" src="images/search.svg" width="18px" height="18px" alt="Поиск">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img class="favorite" src="images/favorite.svg" width="18px" height="17px" alt="Отзывы">
+              <span class="visually-hidden">
+                Отзывы
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
             <a class="button button-all" href="#">Хочу сюда!</a>
-          </ul>
-        </nav>
+          </li>
+          
+        </ul>
+      </nav>
       </header>
 
       <main class="main-inner main-container">
@@ -200,6 +209,8 @@
           </li>
         </ul>
 
+
+        <div class="pagination-container">
         <ul class="pagination">
                    <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -226,7 +237,8 @@
           <p>Гостиниц на странице:</p>
           <button class="button pagination-show" type="button"> 4 </button>
         </div>
-
+	</ul>
+	</div>
       </section>
 
       
@@ -240,42 +252,40 @@
               <button type="submit" class="button subscription-button">Подписаться</button>
             </form>
           </section>
-<!-- new -->
-   </div>
+        </div>
       </main>
 
-        <footer>
 <!-- new -->
-<div class="page-footer-container">
-
-    <section class="footer-social">
-<h2 class="visually-hidden">Социальные сети</h2>
-      <div class="footer-social_wrapper">
-      
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Ютюб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-      <img class="logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="33" alt=".html academy">
-</div>
-    </section>
-<!-- new -->
-   </div>
-  </footer>
+    <footer>
+      <div class="page-footer-container">
+        <section class="footer-social">
+        	<h2 class="visually-hidden">Социальные сети</h2>
+          <div class="footer-social_wrapper">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="#">
+                  <img class="search" src="images/Vectorvk.svg" width="24px" height="14px" alt="Поиск">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="#">
+                  <img class="search" src="images/Vectortelegram.svg" width="18px" height="16px" alt="Поиск">
+                  <span class="visually-hidden">Телеграмм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="#">
+                  <img class="search" src="images/Vectorytube.svg" width="22px" height="17px" alt="Поиск">
+                  <span class="visually-hidden">Ютюб</span>
+                </a>
+             </li>
+            </ul>
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <img class="logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="33" alt=".html academy">
+    	   </div>
+       </section>
+      </div>
+    </footer>
 </body>
 </html>
