@@ -76,7 +76,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   display: block;
-  width: 160px;
+  width: 130px;
   transition: all 0.5s ease;
   text-align: center;
   text-decoration: none;
@@ -86,10 +86,15 @@ a {
   background: #615048;
 }
 
-.conteiner {
- width: 1200px; 
- 
+
+/*new*/
+.page-container {
+	width: 1200px;
+	background: #E5E5E5;
+	margin: 0 auto;
+	padding: 0px 40px;
 }
+
 
 /* Навигация */
 
@@ -100,26 +105,32 @@ a {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-  padding:20px 17px;	
+  padding: 20px 0;	
+}
+
+/*new*/
+.navigation-link:hover,
+.navigation-link_active {
+	border-bottom: 2px solid #756257;
 }
 
 .navigation {
- display: flex;
- width: 1200px; 
- margin: 0 auto;
+	display: flex;
+/*new*/
+	background: #FFFFFF;
+	padding: 0 70px;
 }
 
 .navigation-logo {
   display: block;
-  position: relative;
-  z-index: 1;
-  padding-left: 70px;
+	/*position: relative;
+	z-index: 1;*/
+
 }
 
 .navigation-list {
   align-items: center;
   margin: 0;
-  margin-left: 10px;
   width: 500px;
   list-style-type: none;
   display: flex;
@@ -137,8 +148,6 @@ width: 390px;	*/
   min-height: 18px;
 }
 
-
-
 .navigation-user {
 display: flex;
 justify-content: space-between;
@@ -146,43 +155,35 @@ max-width: 264px;
 margin-left: auto;
 }
 
-
 .main-container {
-  flex-grow: 1;
-  padding-top: 52px; 	
-}
-
-.page-container {
-width: 1200px;
-margin: 0 auto;
+	padding-top: 52px; 	
 }
 
 .main-index {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+	color: #000000;
+	background-color: #ffffff;
+	background-image: url("../images/index-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }  
 
 .inner-header-title {
-  font-size: 60px;
-  line-height: 78px;
-  margin: 0 auto;
+	font-size: 60px;
+	line-height: 78px;
+	margin: 0 auto;
 }
 
 .breadcrumbs {
-  list-style-type: none;
-  display: flex;
-  font-size: 16px;
-  padding: 0;
+	list-style-type: none;
+	display: flex;
+	font-size: 16px;
+	padding: 0;
 }
 
-
 .catalog-products {
-display: flex;
-justify-content: space-between;
-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
 }
 
 .catalog-filter {
@@ -271,11 +272,7 @@ display: flex;
 flex-wrap: wrap;
 }
 
-.wrapper-text {
-  weight: 1200px;
-  padding-top: 60px;
-  padding-bottom: 90px;
-}
+
 
 .advantages-list-icon {
   color: #000;
@@ -315,13 +312,13 @@ width: 230px;
 }	
 
 /*.advantages-item_number {
-width: 230px;
-margin: 103px 85px 102px;	
+	width: 230px;
+	margin: 103px 85px 102px;	
 }
 
 .advantages_number  li {
-      width: 400px;
-hight: 384px;
+	width: 400px;
+	hight: 384px;
       
 }*/
 
@@ -336,7 +333,7 @@ hight: 384px;
 }
 
 .advantages-item_number.number_four {
-  background-color: rgba(131, 179, 211, 0.2)
+	background-color: rgba(131, 179, 211, 0.2)
 }
 
 
@@ -344,17 +341,26 @@ hight: 384px;
   margin-top:30px;
 }
 
-.advantages-title {
-  max-weight: 620px;
-  weight: 100%
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 31px;
+.wrapper-text {
+	padding: 63px 0 90px;
+}
+
+h2.advantages-title {
+	width: 620px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto 31px;
 }
  
-.advantages-text
+.advantages-text {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	color: #333333;
+}
 
 
 .advantages-description-wrapper h3 {
@@ -506,23 +512,23 @@ text-align: center;
 
 /* Подвал */
 
-.footer-social_wrapper {
-display: flex;
-  justify-content: space-around;
-width: 1060px;
-}
-
-.page-footer-container {
-display: flex;
-width: 1060px;
-margin: 0 auto;
+.footer-social {
+	display: flex;
+  	justify-content: space-between;
+	margin: 0 auto;
+/*new*/
+	background: #FFFFFF;
+	padding: 45px 0 35px;
+align-items: center;
 }
 
 .footer-social-list {
   display: flex;
   justify-content: space-around;
   width: 172px;
+	margin-left: 82px;
 }
+
 
 .footer-social-item {
   list-style-type: none;
@@ -537,12 +543,15 @@ margin: 0 auto;
   text-decoration: none;
 }
 
-.contacts-phone a {
-  width: 331px;
+.contacts-phone {
+  	width: 331px;
+	
+	font-size: 38px;
 }
 
-.logo-htmlacademy img {
-display: block;
-width: 115px;
-hight: 33px;
+.logo-htmlacademy {
+	display: block;
+	width: 115px;
+	hight: 33px;
+	margin-right: 70px;
 }

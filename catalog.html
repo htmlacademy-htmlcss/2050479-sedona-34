@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-  
-    <header class="page-header">
-      
-<!-- new -->
-
-	<nav class="navigation">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+      	<nav class="navigation">
          <div class="navigation-logo">
             <img class="logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип Седона.">
 	       </div>
@@ -54,18 +51,17 @@
       </nav>
       </header>
 
-      <main class="main-inner main-container">
-        <div class="page-container">
-         <header class="inner-header">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <main class="main-inner main-container">        
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">Главная</a>
-                </li>
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Каталог</a>
-                </li>
-              </ul>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Каталог</a>
+              </li>
+            </ul>
         </header>
 
         <section class="catalog-products">
@@ -123,12 +119,16 @@
             <button class="button button_del" type="submit">Сбросить</button>
           </form>
         </section>
+        
         <select class="select-control" aria-label="Сортировка">
           <h2>Найдено гостиниц: 38</h2>
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
+        
+        <section>  
+        
         <a href="images/icon-table.svg" class="button button-light">
           <span class="visually-hidden">Показать таблицу</span>
         </a>
@@ -238,54 +238,48 @@
           <button class="button pagination-show" type="button"> 4 </button>
         </div>
 	</ul>
-	</div>
-      </section>
-
-      
-
+      	</div>
+        </section>
+    
         <section class="subscription subscription-catalog">
             <h2 class="subscription-catalog subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-catalog subscription-text" >Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" method="post">
-              <label class="visually-hidden="newsletter-email">Email</label>
+              <label class="visually-hidden"newsletter-email">Email</label>
               <input class="subscription-input" placeholder=" Введите email" type="email" name="subscription-email" id="subscription-email" required>
               <button type="submit" class="button subscription-button">Подписаться</button>
             </form>
-          </section>
-        </div>
+        </section>
+        
       </main>
 
-<!-- new -->
-    <footer>
-      <div class="page-footer-container">
+      <footer>
         <section class="footer-social">
-        	<h2 class="visually-hidden">Социальные сети</h2>
-          <div class="footer-social_wrapper">
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <img class="search" src="images/Vectorvk.svg" width="24px" height="14px" alt="Поиск">
-                  <span class="visually-hidden">ВКонтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <img class="search" src="images/Vectortelegram.svg" width="18px" height="16px" alt="Поиск">
-                  <span class="visually-hidden">Телеграмм</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <img class="search" src="images/Vectorytube.svg" width="22px" height="17px" alt="Поиск">
-                  <span class="visually-hidden">Ютюб</span>
-                </a>
-             </li>
-            </ul>
-          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <img class="logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="33" alt=".html academy">
-    	   </div>
-       </section>
-      </div>
-    </footer>
-</body>
+      <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <img class="search" src="images/Vectorvk.svg" width="24px" height="14px" alt="Поиск">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+           <a class="button" href="#">
+             <img class="search" src="images/Vectortelegram.svg" width="18px" height="16px" alt="Поиск">
+              <span class="visually-hidden">Телеграмм</span>
+           </a>
+          </li>
+          <li class="footer-social-item">
+           <a class="button" href="#">
+              <img class="search" src="images/Vectorytube.svg" width="22px" height="17px" alt="Поиск">
+              <span class="visually-hidden">Ютюб</span>
+           </a>
+         </li>
+        </ul>
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <img class="logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="33" alt=".html academy">
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
