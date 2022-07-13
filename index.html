@@ -229,37 +229,41 @@
             <p class="field-text">
               На эти даты есть свободные номера. Пока есть.
             </p>
-
-            <p class="field-group-number group-people people-adults">
-              <label class="form-label label-adults" for="auth-adults">Взрослые:</label>
-
-              <span class="minus">
-                <button class="button-minus"></button>
-              </span>
-              <input class="auth-form-field field-adults" type="text" id="auth-adults" name="auth-adults" placeholder="2">
-
-              <span class="plus">
-                <button class="button-plus"></button>
-              </span>
-            </p>
-            <p class="field-group-number group-people  ">    
-              <label class="form-label label-children" for="auth-children">Дети:</label>
-
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button">                    
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span>
+            <div class="field-group-people">
+              <p class="field-group-number group-people people-adults">
+                <label class="form-label label-adults" for="auth-adults">Взрослые:</label>
+  
                 <span class="minus">
                   <button class="button-minus"></button>
                 </span>
-              
-                <input class="auth-form-field field-children" type="text" id="auth-children" name="auth-children" placeholder="1">
-              
+                <input class="auth-form-field field-adults" type="text" id="auth-adults" name="auth-adults" placeholder="2">
+  
                 <span class="plus">
                   <button class="button-plus"></button>
                 </span>
-            </p>        
+              </p>
+              <p class="field-group-number group-people  ">    
+                <label class="form-label label-children" for="auth-children">Дети:</label>
+  
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">                    
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                  <span class="minus">
+                    <button class="button-minus"></button>
+                  </span>
+                
+                  <input class="auth-form-field field-children" type="text" id="auth-children" name="auth-children" placeholder="1">
+                
+                  <span class="plus">
+                    <button class="button-plus"></button>
+                  </span>
+              </p>  
+
+            </div>
+
+                  
            
           </form>  
 
