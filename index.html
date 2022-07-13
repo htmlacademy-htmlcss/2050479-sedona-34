@@ -202,7 +202,7 @@
        </section>
 
       </footer>
-      <div class="modal-container">
+      <div class="modal-container modal-container-close ">
         <div class="modal modal-auth"> 
           <div class="modal-header"
           <section class="modal-content">
@@ -214,34 +214,55 @@
           </div>
 
           <form class="auth-form" action="#" method="post">
-            <p class="field-group">
-              <label class="form-label" for="arrival-date">Дата заезда:</label>
+            <p class="field-group-date">
+              <label class="form-label" for="arrival-date">Дата Заезда:</label>
               <input class="auth-form-field field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
             </p>
-            <p class="field-text text-red">
+            <p class="field-text text-error">
               Мы не можем отправить вас в прошлое.
             </p>
-            <p class="field-group">
-              <label class="form-label" for="udate-departre">Дата выезда:</label>
-              <input class="auth-form-field field" type="text" id="auth-password" name="udate-departre" placeholder="1 сентября 2021">
+
+            <p class="field-group-date date-departure">
+              <label class="form-label" for="date-departure">Дата Выезда: </label>
+              <input class="auth-form-field field" type="text" id="date-departure" name="date-departure" placeholder="1 сентября 2021">
             </p>
             <p class="field-text">
               На эти даты есть свободные номера. Пока есть.
             </p>
 
-          </form>  
-          
-          <form class="auth-form-number" action="#" method="post">            
-            <p class="field-group">
-              <label class="form-label" for="auth-password">Взрослые:</label>
-              <input class="auth-form-field " type="text" id="auth-password" name="auth-password" placeholder="Пароль">
-            </p>
+            <p class="field-group-number group-people people-adults">
+              <label class="form-label label-adults" for="auth-adults">Взрослые:</label>
 
-            <p class="field-group-number">
-              <label class="form-label" for="auth-password">Дети:</label>
-              <input class="auth-form-field " type="text" id="auth-password" name="auth-password" placeholder="Пароль">
-            </p>            
-          </form>
+              <span class="minus">
+                <button class="button-minus"></button>
+              </span>
+              <input class="auth-form-field field-adults" type="text" id="auth-adults" name="auth-adults" placeholder="2">
+
+              <span class="plus">
+                <button class="button-plus"></button>
+              </span>
+            </p>
+            <p class="field-group-number group-people  ">    
+              <label class="form-label label-children" for="auth-children">Дети:</label>
+
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">                    
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+                <span class="minus">
+                  <button class="button-minus"></button>
+                </span>
+              
+                <input class="auth-form-field field-children" type="text" id="auth-children" name="auth-children" placeholder="1">
+              
+                <span class="plus">
+                  <button class="button-plus"></button>
+                </span>
+            </p>        
+           
+          </form>  
+
           <button class="button auth-form-button" type="submit">Найти</button>
         </div>
 
