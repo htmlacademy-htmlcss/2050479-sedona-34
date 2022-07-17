@@ -114,6 +114,7 @@ a {
 .navigation-logo {
   display: block;
   width: 139px;
+  cursor: pointer;
 }
 
 .logo {
@@ -150,7 +151,7 @@ a {
 .home::after {
   position: absolute;
   right: 17px;
-  bottom: -2px;
+  bottom: 0px;
   left: 17px;
   height: 2px;
   background-color: #756257;
@@ -164,7 +165,7 @@ a {
 .catalog::after {
   position: absolute;
   right: 17px;
-  bottom: -1;
+  bottom: 0;
   left: 17px;
   height: 2px;
   background-color: #756257;
@@ -515,6 +516,7 @@ input.range-input {
   position: absolute;
   height: 4px;
   background-color: #fff;
+  width: 226px;
 }
 
 .range-toggle {
@@ -603,7 +605,22 @@ input.range-input {
   border: none;
   background: transparent;
   cursor: pointer;
-  padding: 20px 0px 8px;
+  width: 100px;
+  padding: 4px 14px 5px 13px;
+  margin: 12px auto 0;
+}
+
+.button-del:hover {
+  opacity: 0.6;
+}
+
+.button-del:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-del:disabled {
+  opacity: 0.6;
 }
 
 .price {
@@ -628,7 +645,7 @@ input.range-input {
   display: grid;
   grid-template-columns: 140px 140px;	
   column-gap: 20px;
-  grid-template-rows: 211px 28px 21px 37px 37px;
+  /*grid-template-rows: 211px 28px 21px 37px 37px;*/
   row-gap: 16px;
   padding: 20px;
   width: 300px;
@@ -748,6 +765,7 @@ input.range-input {
 .card-stars {
   display: block;
   align-items: center;
+  margin: 0;
 }
 
 /*.card-stars.five {
@@ -1200,6 +1218,7 @@ p.pagination-text {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 175px;
 }
 
 .pagination-link {
@@ -1413,6 +1432,10 @@ ul.footer-social-list {
   color: #000000;
 }
 
+.auth-form-field::placeholder {
+  color: #000000;
+}
+
 .auth-form-field:hover {
   background-color: #E6E6E6;
 }
@@ -1470,27 +1493,29 @@ ul.footer-social-list {
 
 .group-people {
   position: relative;
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .label-adults {
   margin-right: 59px;
 }
 .people-adults{
-  margin-right: 55px;
+  margin-right: 62px;
 }
 
 .button-minus {
   position: absolute;
   content: '';
   background: #F2F2F2;
-  right: 102px;
-  top: 23px;
+  right: 98px;
+  top: 22px;
   width: 13px;
   height: 13px;
   background-image: url("../images/minus.svg");
   background-repeat: no-repeat;
+  background-position: center;
   border: none;
+  opacity: 0.3;
 }
 
 .button-minus:hover {
@@ -1510,31 +1535,34 @@ ul.footer-social-list {
 
 .field-children {
   background: #F2F2F2;
-  width: 136px;
+  width: 125px;
   padding: 0;
-  text-align: center;
-  border: none;
   margin-left: 42px;
+  text-align: center;
+  border: 3px solid #FFFFFF;
+  border-radius: 4px;
 }
 
 .field-adults {
   background: #F2F2F2;
-  width: 134px;
+  width: 125px;
   padding: 0;
   text-align: center;
-  border: none;
+  border: 3px solid #FFFFFF;
+  border-radius: 4px;
 }
 
 .button-plus {
   position: absolute;
-  right: 19px;
-  top: 17px;
+  right: 17px;
+  top: 20px;
   content: ''; 
   background: #F2F2F2;
   width: 13px;
   height: 13px;
   background-image: url("../images/plus.svg");
   background-repeat: no-repeat;
+  background-position: center;
   border: none;
   opacity: 0.3;
 }
@@ -1556,11 +1584,10 @@ ul.footer-social-list {
 
 .auth-form-button {
   width: 575px;
-  padding: 12px 26px;
+  padding: 10px 26px;
   margin-top: 39px;
   background: #83B3D3;
   border-radius: 10px;
-  border: none;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -1568,6 +1595,7 @@ ul.footer-social-list {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: 3px solid #FFFFFF;
 }
 
 .auth-form-button:hover {
@@ -1580,7 +1608,7 @@ ul.footer-social-list {
 }
 
 .auth-form-button:active {
-  color: #F5F5F5;
+  color: #95BEDA;
   background: #82B3D3;
 }
 
@@ -1656,8 +1684,9 @@ ul.footer-social-list {
 .tooltip-text::after {
   content: '';
   background-image: url("../images/triangl.svg");
-  width: 14px;
-  height: 6px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 9px;
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -1667,5 +1696,5 @@ ul.footer-social-list {
 }
 
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
