@@ -1041,6 +1041,10 @@ h3.advantages-title-city {
   margin-bottom: 28px;
 }
 
+p.advantages-description-housing {
+  padding: 0 113px;
+}
+
 .advantages-item-number {
   list-style-type: none;
   width: 400px;
