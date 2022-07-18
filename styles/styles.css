@@ -249,7 +249,7 @@ a.navigation-icon.favorite {
 .breadcrumbs {
   display: flex;
   list-style-type: none;
-  margin: 10px 2px 31px;
+  margin: 4px 2px 38px;
   padding: 0;
   width: 180px;
 }
@@ -278,6 +278,7 @@ a.navigation-icon.favorite {
 
 .link-home {
   fill: #FFFFFF;
+  padding-top: 5px;
 }
 
 .link-home:hover {
@@ -292,6 +293,29 @@ a.navigation-icon.favorite {
   fill: rgba(255, 255, 255, 0.3);
 }
 
+.breadcrumbs-link-hotel::before {
+  position: relative;
+  top: 14px;
+  right: 14px;
+  content: "";
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 6px;
+  height: 8px;
+}
+
+li.breadcrumbs-item-hotel {
+  margin-left: 24px;
+  display: flex;
+}
+
+li.breadcrumbs-item-home {
+  display: flex;
+  align-items: center;
+}
+
+/*
 .breadcrumbs-item-home::after {
   position: relative;
   bottom: 14px;
@@ -302,7 +326,7 @@ a.navigation-icon.favorite {
   display: block;
   width: 6px;
   height: 8px;
-}
+}*/
 
 .catalog-filter {
   list-style-type: none;
@@ -844,9 +868,10 @@ h2.sorting-title {
 
 .sorting-button {
   display: flex;
-  width: 160px;
+  flex-wrap: wrap;
+  width: 168px;
   align-items: center;
-  margin-left: 78px;
+  margin-left: 70px;
 }
 
 .select-control {
@@ -884,7 +909,6 @@ h2.sorting-title {
 
 .button-light:first-child {
   border: 2px solid #000000;
-  margin-left: 0;
 }
 
 .button-light:hover,
@@ -1018,7 +1042,7 @@ h2.advantages-title {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-  margin-top: 29px;
+  margin-top: 30px;
 }
 
 h3.advantages-title-housing {
